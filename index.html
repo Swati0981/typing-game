@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style/style.css">
+<body>
+  <button id="settings-btn" class="settings-btn">Settings</button>
+
+  <div id="settings" class="settings">
+    <form id="settings-form">
+      <label for="difficulty" class="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </form>
+  </div>
+
+  <div class="container">
+    <h1>Typing Game</h1>
+    <p>Type the following:</p>
+
+    <h2 id="word"></h2>
+
+    <input
+      type="text"
+      id="text"
+      placeholder="Type the word here..."
+      autocomplete="off"
+    />
+
+    <div class="time-container">
+      <p>Time left: <span id="time">10</span>s</p>
+    </div>
+
+    <div class="score-container">
+      <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <div id="end-game-container" class="end-game-container"></div>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
